@@ -1,7 +1,7 @@
 #!/usr/bin/expect
 
 # Runs KU REPO bash script
-spawn /home/pinkg/Scripts/git_pull_KU.sh
+spawn /home/pinkg/Scripts/Bash/git_pull_KU.sh
 
 # Waits for username prompt and sends answer
 expect "Username for 'https://ku.bootcampcontent.com':\r"
@@ -9,7 +9,7 @@ send -- "grahmik@gmail.com\r"
 
 # Waits for password prompt and sends answer
 expect "Password for 'https://grahmik@gmail.com@ku.bootcampcontent.com':\r"
-send -- ""
+send -- "!s3bR83WKBDRYAK\r"
 
 # End of file
 expect eof
